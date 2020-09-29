@@ -1,0 +1,42 @@
+{
+    "ts-node": {
+        "files": true
+    },
+    "compilerOptions": {
+        "incremental": true,
+        "target": "es6",
+        "lib": ["esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": false,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "esModuleInterop": true,
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "downlevelIteration": true,
+        // "rootDir": "..",
+        "baseUrl": ".",
+        "outDir": "./dist",
+        "allowSyntheticDefaultImports": true,
+        "jsx": "preserve",
+        "paths": {
+            "~/*": ["./src/*"]
+        },
+        "typeRoots": ["node_modules/@types", "src/@types"],
+        "plugins": [{ "transform": "typescript-transform-paths" }]
+    },
+    "files": ["src/@types/graphql.d.ts", "src/@types/ambient.d.ts"],
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}

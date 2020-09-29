@@ -1,0 +1,3 @@
+src/types/gen-types.d.ts
+src/sqlmancer/generated
+./src/sqlmancer/generated.ts
